@@ -2,7 +2,8 @@ function addDirAuto() {
   const elements = [].slice.call(document.querySelectorAll(
     'p:not([dir]),' + 
     'ul:not([dir]),' +
-    'cu-task-title:not([dir])'
+    'cu-task-title:not([dir]),' +
+    'a.board-task__name-link:not([dir])'
   ));
   elements.forEach(el => {
     el.setAttribute('dir', 'auto');
